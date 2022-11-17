@@ -12,10 +12,19 @@
 }
 
 .search-container{
-  border: 2px solid red; 
+  border: 2px solid goldenrod; 
 }
 
 form{
   display: flex;
   flex-direction: column;
+  padding: 10%;
+  background-color: #6c6c6c;
+}
+
+input{
+  /* border: 5px solid goldenrod; */
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #CFD2CF;
 }
