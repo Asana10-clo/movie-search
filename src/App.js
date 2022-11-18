@@ -47,7 +47,10 @@ function App() {
       <div>
         {data.map((movie , index)=>{
           return(
-          <div key={index}>
+          <div 
+            className="bg-red-500"
+            key={index}
+          >
             <p> {movie.Title} </p>
           </div>
         )
