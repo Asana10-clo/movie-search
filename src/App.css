@@ -15,6 +15,10 @@
   border: 2px solid goldenrod; 
 }
 
+h1{
+  color: #CFD2CF;
+}
+
 form{
   display: flex;
   flex-direction: column;

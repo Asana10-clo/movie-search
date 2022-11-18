@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import CardUI  from './CardUI';
+
 function App() {
 
   const [search, setSearch] = useState('');
@@ -44,20 +46,20 @@ function App() {
           </form>
       </div>
 
-      <div>
-        {data.map((movie , index)=>{
+      <div className="bg-yellow-500 mt-4 py-4 px-4 rounded-lg border-4 grid grid-cols-5 gap-4">
+        {data.map((data)=>{
           return(
-          <div 
-            className="bg-red-500"
-            key={index}
-          >
-            <p> {movie.Title} </p>
-          </div>
-        )
-        })}
+              <CardUI 
+                key={data.imdbId}
+                img={data.Poster}
+                title={data.Title}
+                year={data.Year}
+                type={data.Type}
+              />   
+        )})}
       </div>
     </div>
-  );
+  ); 
 }
 
 
