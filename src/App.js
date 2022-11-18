@@ -42,7 +42,7 @@ function App() {
               placeholder="Search here..."
             />
               
-            <button onClick={searchFunction} type="submit">GO</button>
+            <button onClick={searchFunction} type="submit" className="rounded-full bg-yellow-500 mt-2">GO</button>
           </form>
       </div>
 
